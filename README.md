@@ -297,13 +297,4 @@ php artisan migrate
 php artisan db:seed
 ```
 
-## 📞 Support
-
-Pour toute question ou problème :
-1. Consulter les README spécifiques dans chaque dossier
-2. Vérifier la configuration des prérequis
-3. S'assurer que les workspaces Terraform sont correctement configurés
-
----
-
 **Note :** Ce projet nécessite une configuration AWS appropriée et des droits suffisants pour créer les ressources définies dans les modules Terraform." 
