@@ -1,0 +1,75 @@
+# ==============================================================================
+# TERRAFORM CONFIGURATION
+# ==============================================================================
+
+# terraform.tfstate.d
+terraform.tfstate.d/
+
+# Ignore local variables
+/IAAS/terraform/terraform.tfvars
+
+# Ignore local directory and local state
+/IAAS/terraform/.terraform/
+/IAAS/terraform/*.tfstate
+/IAAS/terraform/*.tfstate.backup
+/IAAS/terraform/*.tfplan
+/IAAS/terraform/.terraform.lock.hcl
+
+# PAAS Terraform files
+/PAAS/*terraform*
+
+# ==============================================================================
+# NODE.JS / JAVASCRIPT
+# ==============================================================================
+
+*node_modules*
+*.zip*
+*dist*
+
+# ==============================================================================
+# LARAVEL APPLICATION (sample-app)
+# ==============================================================================
+
+# Laravel Framework generated files
+/IAAS/sample-app/storage/framework/compiled.php
+/IAAS/sample-app/storage/framework/config.php
+/IAAS/sample-app/storage/framework/down
+/IAAS/sample-app/storage/framework/events.scanned.php
+/IAAS/sample-app/storage/framework/maintenance.php
+/IAAS/sample-app/storage/framework/routes.php
+/IAAS/sample-app/storage/framework/routes.scanned.php
+/IAAS/sample-app/storage/framework/schedule-*
+/IAAS/sample-app/storage/framework/services.json
+
+# Laravel storage directories (ignore all files but keep .gitignore)
+/IAAS/sample-app/storage/logs/*
+!/IAAS/sample-app/storage/logs/.gitignore
+
+/IAAS/sample-app/storage/framework/cache/*
+!/IAAS/sample-app/storage/framework/cache/data/
+!/IAAS/sample-app/storage/framework/cache/.gitignore
+
+/IAAS/sample-app/storage/framework/cache/data/*
+!/IAAS/sample-app/storage/framework/cache/data/.gitignore
+
+/IAAS/sample-app/storage/framework/sessions/*
+!/IAAS/sample-app/storage/framework/sessions/.gitignore
+
+/IAAS/sample-app/storage/framework/testing/*
+!/IAAS/sample-app/storage/framework/testing/.gitignore
+
+/IAAS/sample-app/storage/framework/views/*
+!/IAAS/sample-app/storage/framework/views/.gitignore
+
+/IAAS/sample-app/storage/app/*
+!/IAAS/sample-app/storage/app/public/
+!/IAAS/sample-app/storage/app/.gitignore
+
+/IAAS/sample-app/storage/app/public/*
+!/IAAS/sample-app/storage/app/public/.gitignore
+
+/IAAS/sample-app/bootstrap/cache/*
+!/IAAS/sample-app/bootstrap/cache/.gitignore
+
+# Database files
+/IAAS/sample-app/database/*.sqlite*
